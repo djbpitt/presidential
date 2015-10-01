@@ -1,0 +1,44 @@
+File Name Convention:
+
+YYYYMMDD_GW_Inaug1
+
+year, month, day _ initial of the president _ speech name
+
+Initial of the president: ex: GW for George Washington, FDR for Franklin Roosevelt etc
+
+Speech Name: 
+Inaugurals: Inaug1, Inaug2
+State of the Unions: sotu1-1 (first term, first sotu), sotu2-4 (second term, fourth sotu)
+"International Speeches": usually use city of speech, dublin
+
+ex: 
+George Washington's First SofU: 17900108_GW_sotu1-1
+FDR's 4th Inaugural: 19450120_FDR_Inaug4
+Obama at Cairo University: 20090604_BO_Cairo
+_____________________
+
+meta section of the xml files
+
+<when> - contains date of speech.  Borrowing from the TimeStamp element.  Only info contained should be YYYY-MM-DD
+<title> - title of speech
+<sourceDesc> - url of where the speech text came from
+
+_______________________
+
+Selection Criteria
+
+- Has at least 2 Inaugural speeches (for comparison)
+- some from the SotU delivered as speech and some from the SotU delivered as Written era
+- No more than 2 from any 50 year period
+- Not all selected presidents will have "International Speeches" for comparison.  Some might only be used for Inaugural and SotU
+
+Selection:
+George Washington
+James Madison
+Abraham Lincoln
+Grover Cleveland
+Woodrow Wilson
+Franklin Roosevelt
+Richard Nixon
+Barack Obama
+
