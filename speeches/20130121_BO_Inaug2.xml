@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="speechSchema.rnc" type="application/relax-ng-compact-syntax"?>
 <speech>
     <meta>
         <when>2013-01-21</when>
-        <title>Barack Obama - Second Inaugural Address</title>
+        <author>Barack Obama</author>
+        <title>Second Inaugural Address</title>
         <sourceDesc>http://www.presidency.ucsb.edu/ws/index.php?pid=102827</sourceDesc>
     </meta>
     <body>

@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="speechSchema.rnc" type="application/relax-ng-compact-syntax"?>
 <speech>
     <meta>
         <when>1945-01-20</when>
-        <title>Franklin D. Roosevelt - Fourth Inaugural Address</title>
+        <author>Franklin D. Roosevelt</author>
+        <title>Fourth Inaugural Address</title>
         <sourceDesc>http://millercenter.org/president/fdroosevelt/speeches/speech-3337</sourceDesc>
     </meta>
     <body>

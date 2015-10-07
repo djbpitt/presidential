@@ -1,0 +1,10 @@
+start = root
+root = element speech {meta, body}
+    meta = element meta {when, au, ti, sd}
+        when = element when {text} #replace with date pattern
+        au = element author {"George Washington" | "James Madison" | "Abraham Lincoln" | "Grover Cleveland" | "Woodrow Wilson" | "Franklin D. Roosevelt" | "Richard Nixon" | "Barack Obama"}
+        ti = element title {text}
+        sd = element sourceDesc {text}       
+    body = element body {p+}
+        p = element p {text} #change to { mixed { (zz | yyy | xx)* } } format once other tags are added to p
+        

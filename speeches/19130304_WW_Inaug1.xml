@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="speechSchema.rnc" type="application/relax-ng-compact-syntax"?>
 <speech>
     <meta>
         <when>1913-03-04</when>
-        <title>Woodrow Wilson - First Inaugural Address</title>
+        <author>Woodrow Wilson</author>
+        <title>First Inaugural Address</title>
         <sourceDesc>http://millercenter.org/president/wilson/speeches/speech-3566</sourceDesc>
     </meta>
     <body>

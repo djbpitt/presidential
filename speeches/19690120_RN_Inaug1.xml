@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="speechSchema.rnc" type="application/relax-ng-compact-syntax"?>
 <speech>
     <meta>
         <when>1969-01-20</when>
-        <title>Richard Nixon - First Inaugural Address</title>
+        <author>Richard Nixon</author>
+        <title>First Inaugural Address</title>
         <sourceDesc>http://millercenter.org/president/nixon/speeches/speech-3587</sourceDesc>
     </meta>
     <body>

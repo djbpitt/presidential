@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="speechSchema.rnc" type="application/relax-ng-compact-syntax"?>
 <speech>
     <meta>
         <when>1973-01-20</when>
-        <title>Richard Nixon - Second Inaugural Address</title>
+        <author>Richard Nixon</author>
+        <title>Second Inaugural Address</title>
         <sourceDesc>http://millercenter.org/president/nixon/speeches/speech-3588</sourceDesc>
     </meta>
     <body>

@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="speechSchema.rnc" type="application/relax-ng-compact-syntax"?>
 <speech>
     <meta>
         <when>1793-03-04</when>
-        <title>George Washington - Second Inaugural Address</title>
+        <author>George Washington</author>
+        <title>Second Inaugural Address</title>
         <sourceDesc>http://millercenter.org/president/washington/speeches/speech-3454</sourceDesc>
     </meta>
     <body>

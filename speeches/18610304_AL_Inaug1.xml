@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="speechSchema.rnc" type="application/relax-ng-compact-syntax"?>
 <speech>
     <meta>
         <when>1861-03-04</when>
-        <title>Abraham Lincoln - First Inaugural Address</title>
+        <author>Abraham Lincoln</author>
+        <title>First Inaugural Address</title>
         <sourceDesc>http://millercenter.org/president/lincoln/speeches/speech-3507</sourceDesc>
     </meta>
     <body>

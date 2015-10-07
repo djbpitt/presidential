@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="speechSchema.rnc" type="application/relax-ng-compact-syntax"?>
 <speech>
     <meta>
         <when>1893-03-04</when>
-        <title>Grover Clevelan - Second Inaugural Address</title>
+        <author>Grover Clevelan</author>
+        <title>Second Inaugural Address</title>
         <sourceDesc>http://millercenter.org/president/cleveland/speeches/speech-3572</sourceDesc>
     </meta>
     <body>

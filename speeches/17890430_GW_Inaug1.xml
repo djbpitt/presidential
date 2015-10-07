@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="speechSchema.rnc" type="application/relax-ng-compact-syntax"?>
 <speech>
     <meta>
         <when>1789-04-30</when>
-        <title>George Washington - First Inaugural Address</title>
+        <author>George Washington</author>
+        <title>First Inaugural Address</title>
         <sourceDesc>http://millercenter.org/president/washington/speeches/speech-3446</sourceDesc>
     </meta>
     <body>
