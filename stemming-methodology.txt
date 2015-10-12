@@ -1,0 +1,7 @@
+In Python, for each speech in XML format:
+
+Read in the speech
+Use XML library to extract just the <body> element
+Run that text through the stemmer
+Construct filename for output file
+Write the results of stemming into a new text file
