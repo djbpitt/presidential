@@ -6,5 +6,7 @@ root = element speech {meta, body}
         ti = element title {text}
         sd = element sourceDesc {text}       
     body = element body {p+}
-        p = element p {text} #change to { mixed { (zz | yyy | xx)* } } format once other tags are added to p
+        p = element p { mixed { (table | quote)* } }
+            table = element table {text}
+            quote = element quote {text}
         
