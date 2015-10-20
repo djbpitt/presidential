@@ -1,0 +1,30 @@
+<speech>
+    <p>Hi, Mom!</p>
+    <table>
+        <region>
+            <name>Middle States</name>
+            <value>181</value>
+        </region>
+        <region>
+            <name>Southern States and Indian Territory (41)</name>
+            <value>1,406</value>
+        </region>
+        <region>
+            <name>The States and Territories of the Pacific Coast</name>
+            <value>190</value>
+        </region>
+        <region>
+            <name>The ten States and Territories of the West and Northwest</name>
+            <value>435</value>
+        </region>
+        <region>
+            <name>District of Columbia</name>
+            <value>2</value>
+        </region>
+        <summary>
+            <label>Total</label>
+            <value>2,219</value>
+        </summary>
+    </table>
+    <p>Bye, Mom!</p>
+</speech>
