@@ -862,11 +862,37 @@
         <p>The number of post-offices on July 1, 1888, was 57,376, an increase of 6,124 in three
             years and of 2,219 for tthe last fiscal year. The latter-mentioned increase is
             classified as follows:</p>
-        <p>New England States</p>
+        <p><table>
+                <th>
+                    <td>New England States</td>
+                    <td/>
+                </th>
 
-        <p><table>Middle States 181 Southern States and Indian Territory (41) 1,406 The States and
-            Territories of the Pacific Coast 190 The ten States and Territories of the West and
-            Northwest 435 District of Columbia 2 Total 2,219</table></p>
+                <tr>
+                    <td>Middle States</td>
+                    <td>181</td>
+                </tr>
+                <tr>
+                    <td>Southern States and Indian Territory (41)</td>
+                    <td>1,406</td>
+                </tr>
+                <tr>
+                    <td>The States and Territories of the Pacific Coast</td>
+                    <td>190</td>
+                </tr>
+                <tr>
+                    <td>The ten States and Territories of the West and Northwest</td>
+                    <td>435</td>
+                </tr>
+                <tr>
+                    <td>District of Columbia</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>2,219</td>
+                </tr>
+            </table></p>
 
         <p>Free-delivery offices have increased from 189 in the fiscal year ended June 30, 1887, to
             358 in the year ended June 30, 1888.</p>

@@ -7,6 +7,9 @@ root = element speech {meta, body}
         sd = element sourceDesc {text}       
     body = element body {p+}
         p = element p { mixed { (table | quote)* } }
-            table = element table {text}
+            table = element table { th, tr+ }
+                th = element th { td+}
+                    td = element td {text}
+                tr = element tr { td+}
             quote = element quote {text}
         

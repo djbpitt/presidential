@@ -697,22 +697,77 @@
 
         <p>Weight of mail matter (other than above) transmitted through the mails for the year
             ending June 30, 1896.</p>
-        <p><table>Class Weight Revenue Pounds 1. Domestic and foreign letters and postal cards, etc
-                65,337,343 $60,624,464 2. Newspapers and periodicals, 1 cent per pound 348,988,648
-                2,996,403 3. Books, seeds, etc., 8 cents a pound 78,701,148 10,324,069 4. Parcels,
-                etc., 16 cents a pound 19,950,187 3,129,321 Total 512,977,326 77,044,257 The
-                remainder of our postal revenue, amounting to something more than $5,000,000, was
-                derived from box rents, registry fees, money-order business, and other similar
-                items. The entire expenditures of the Department, including pay for transportation
-                credited to the Pacific railroads, were $92,186,195.11, which may be considered as
-                the cost of receiving, carrying, and delivering the above mail matter. It thus
-                appears that though the second-class matter constituted more than two-thirds of the
-                total that was carried, the revenue derived from it was less than one-thirtieth of
-                the total expense. The average revenue was-- From each pound of first-class matter
-                .........cents 93.0 From each pound of second class ...............mills 8.5 From
-                each pound of third class ...................cents 13.1 From each pound of fourth
-                class ..................do 15.6 Of the second class 52,348,297 was county-free
-                matter.</table></p>
+        <p><table>
+                <th>
+                    <td>Class</td>
+                    <td>Weight</td>
+                    <td>Revenue</td>
+                </th>
+                <tr>
+                    <td/>
+                    <td>Pounds</td>
+                    <td/>
+                </tr>
+                <tr>
+                    <td>1. Domestic and foreign letters and postal cards, etc</td>
+                    <td>65,337,343</td>
+                    <td>$60,624,464</td>
+                </tr>
+                <tr>
+                    <td>2. Newspapers and periodicals, 1 cent per pound</td>
+                    <td>348,988,648</td>
+                    <td>2,996,403</td>
+                </tr>
+                <tr>
+                    <td>3. Books, seeds, etc., 8 cents a pound</td>
+                    <td>78,701,148</td>
+                    <td>10,324,069</td>
+                </tr>
+                <tr>
+                    <td>4. Parcels, etc., 16 cents a pound</td>
+                    <td>19,950,187</td>
+                    <td>3,129,321</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>512,977,326</td>
+                    <td>77,044,257</td>
+                </tr>
+            </table></p>
+        <p>The remainder of our postal revenue, amounting to something more than $5,000,000, was
+            derived from box rents, registry fees, money-order business, and other similar
+            items.</p>
+        <p>The entire expenditures of the Department, including pay for transportation credited to
+            the Pacific railroads, were $92,186,195.11, which may be considered as the cost of
+            receiving, carrying, and delivering the above mail matter. It thus appears that though
+            the second-class matter constituted more than two-thirds of the total that was carried,
+            the revenue derived from it was less than one-thirtieth of the total expense.</p>
+
+        <p><table>
+                <th>
+                    <td>The average revenue was--</td>
+                    <td/>
+                </th>
+                <tr>
+                    <td>From each pound of first-class matter .........cents</td>
+                    <td>93.0</td>
+                </tr>
+                <tr>
+                    <td>From each pound of second class ...............mills</td>
+                    <td>8.5</td>
+                </tr>
+                <tr>
+                    <td>From each pound of third class ...................cents</td>
+                    <td>13.1</td>
+                </tr>
+                <tr>
+                    <td>From each pound of fourth class ..................do</td>
+                    <td>15.6</td>
+                </tr>
+                <tr>
+                    <td>Of the second class 52,348,297 was county-free matter.</td>
+                </tr>
+            </table></p>
 
         <p>The growth in weight of second-class matter has been from 299,000,000 pounds in 1894 to
             312,000,000 in 1895 and to almost 349,000,000 in 1896, and it is quite evident this
