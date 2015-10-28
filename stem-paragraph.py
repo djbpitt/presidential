@@ -34,7 +34,7 @@ paragraphs = xml.xpath('//p')
 for paragraph in paragraphs:
     # Prepare output file
     counter += 1
-    output = open(basename + '_p-' + counter + '.txt','w')
+    output = open(basename + '_p-' + str(counter) + '.txt','w')
 
     # Tokenize, lowercase, and stem
     tokens = word_tokenize(paragraph.xpath('string()'))
