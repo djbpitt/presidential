@@ -33,7 +33,7 @@ paragraphs = xml.xpath('//p')
 #Process each paragraph
 for paragraph in paragraphs:
     # Prepare output file
-    counter = counter++
+    counter += 1
     output = open(basename + '_p-' + counter + '.txt','w')
 
     # Tokenize, lowercase, and stem
