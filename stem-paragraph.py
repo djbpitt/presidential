@@ -32,7 +32,7 @@ paragraphs = xml.xpath('//p')
 
 #Process each paragraph
 for paragraph in paragraphs:
-    # Prepare output file
+    # Prepare output filename
     counter += 1
     output = open(basename + '_p' + str(counter).zfill(3) + '.txt','w')
 
