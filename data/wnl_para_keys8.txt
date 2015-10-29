@@ -1,0 +1,8 @@
+0	0.12636	state united government ha wa treaty country question great american citizen foreign power territory claim britain relation authority british 
+1	0.26549	nation world people peace ha war america american time life great year men thing make today power wa freedom 
+2	0.08383	war wa army ha enemy force navy vessel year gun number men naval troop battle officer general soldier ship 
+3	0.10525	job american year tax business work make america energy family school ve economy program market million country education time 
+4	0.07644	state united court law president constitution union case government citizen congress mr representative house fellow senate oath party constitutional 
+5	0.11454	people government public interest nation ha country land citizen national duty trust labor advantage free principle support power confidence 
+6	0.08288	year wa fiscal revenue expenditure june silver government total treasury increase number pension amount day receipt cent sum expense 
+7	0.2619	congress ha law present government service made general time public subject department duty country indian state report consideration condition 

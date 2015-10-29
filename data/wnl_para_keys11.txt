@@ -1,0 +1,11 @@
+0	-1.001	power make american part vessel country energy line president enemy british control character property danger arm event nature material 
+1	-1.001	law general act citizen measure foreign provision legislation case justice system constitution court purpose necessity plan union view proper 
+2	-1.001	american life business work give thing support labor reform opportunity family put rule ve god capital small man promise 
+3	-1.001	time ha country present result order problem trade silver success program session period product greater production month received message 
+4	-1.001	nation america job home future tax security today change economy work high party meet defense doe pay making community 
+5	-1.001	year wa day number increase operation revenue fiscal cost expenditure treasury total money service million class june le person 
+6	-1.001	ha made good effort long purpose army hand claim demand past fact history military spirit increased branch confidence favor 
+7	-1.001	war great force place policy progress office duty full affair officer faith resource political effect advantage britain fellow face 
+8	-1.001	congress public interest service action department condition subject land report indian consideration secretary attention important duty relation administration present 
+9	-1.001	government state united treaty question part large authority federal territory found senate reason house representative existing island commissioner spain 
+10	-1.001	people world peace national nation men free principle hope freedom common end responsibility individual democracy find true prosperity task 

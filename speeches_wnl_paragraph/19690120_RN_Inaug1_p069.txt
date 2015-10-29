@@ -1,0 +1,11 @@
+let
+this
+message
+be
+heard
+by
+strong
+and
+weak
+alike
+:
