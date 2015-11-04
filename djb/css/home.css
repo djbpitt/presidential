@@ -1,0 +1,107 @@
+body {
+    background-color: #DDE6FF;
+}
+
+div#navbar {
+    position: fixed;
+    background-color: #00154c;
+    left: 0px;
+    width: 100%;
+    top: 0px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.flex-list-nav{
+  list-style:none;
+  margin:20px;
+  padding:0px;
+  
+  display:flex;
+  flex-flow: row;
+  justify-content:center;
+}
+
+ul#list-nav li a {
+  text-decoration:none;
+  font-weight: bold;
+  font-size: 125%;
+  font-family: "Book Antiqua";
+  background:#00154c;
+  color: #DDE6FF;
+  text-align:center;
+  padding: 20px;
+}
+
+ul#list-nav li a:hover {
+  background:#DDE6FF;
+  color:#000
+}
+
+div#content {
+    position: relative;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    top: 80px;
+    font-family: "Book Antiqua";
+    z-index: 0;
+}
+.flex-content {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+}
+div#footer {
+    border-width:3px;
+    border-style:groove;
+    border-color:#00154c;
+    padding: 2%;
+}
+.flex-footer{
+    order: 1;
+}
+
+h1 { text-align:center; font-family: "Georgia"; font-weight:bold;}
+h2 { text-align:center; font-family: "Georgia"; font-weight:bold;}
+h3 { text-align:left; font-family: "Georgia"; font-weight:bold;}
+
+div#homepage {
+    border-width:3px;
+    border-style:groove;
+    border-color:#00154c;
+    padding: 2%;
+}
+
+.flex-speeches {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;  
+}
+
+div#speechDisplay {
+    border-width:3px;
+    border-style:groove;
+    border-color:#00154c;
+    background: rgba(255, 255, 255, 0.5);
+    z-index:500;
+}
+
+.flex-speechDisplay {
+   flex-grow: 6;
+   order:1;
+}
+
+div#speechIndex {
+    border-width:3px;
+    border-style:groove;
+    border-color:#00154c;
+    padding:2%;
+    z-index:500;
+}
+.flex-speechIndex {
+    flex-grow:1;
+    order:2;
+}
+
+

@@ -1,0 +1,15 @@
+start = root
+root = element speech {meta, body}
+    meta = element meta {when, au, ti, sd}
+        when = element when {text} #replace with date pattern
+        au = element author {"George Washington" | "James Madison" | "Abraham Lincoln" | "Grover Cleveland" | "Woodrow Wilson" | "Franklin D. Roosevelt" | "Richard Nixon" | "Barack Obama"}
+        ti = element title {text}
+        sd = element sourceDesc {text}       
+    body = element body {p+}
+        p = element p { mixed { (table | quote)* } }
+            table = element table { th, tr+ }
+                th = element th { td+}
+                    td = element td {text}
+                tr = element tr { td+}
+            quote = element quote {text}
+        
