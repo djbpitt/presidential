@@ -1,0 +1,13 @@
+0	-1.001	ha country duty indian officer political find respect confidence hope aid information due civil fellow support circumstance continued god 
+1	-1.001	public service work land general important made labor opportunity class operation demand success capital community school benefit equal advantage 
+2	-1.001	year wa increase office revenue fiscal cost expenditure treasury total money june silver day amount pension rate debt expense 
+3	-1.001	government present ha interest part made department condition result secretary large attention regard meet le necessity importance appropriation opinion 
+4	-1.001	wa men life number force hand enemy progress defense child woman ago end le ha navy step living single 
+5	-1.001	make business american system home give tax day change reform federal problem million small fact back control industry secure 
+6	-1.001	state united government treaty question view territory claim affair great british effect britain international relation foreign vessel island received 
+7	-1.001	congress time act action subject report measure consideration military matter legislation president session general nature special passed month message 
+8	-1.001	nation people world peace thing free spirit common freedom policy lead rule man prosperity market live purpose seek stand 
+9	-1.001	power national good people security effort long order justice doe individual faith continue task true face desire greater economic 
+10	-1.001	war great army full person resource recommend increased arm property issue gun prevent troop naval required purchase account danger 
+11	-1.001	american america job future time economy today energy party responsibility family put history democracy ve senate promise house care 
+12	-1.001	law citizen purpose union provision case principle constitution court trade authority commerce executive proper object plan protection obligation liberty 

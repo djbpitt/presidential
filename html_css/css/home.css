@@ -4,7 +4,7 @@ body {
 
 div#navbar {
     position: fixed;
-    background-color: #00154c;
+    background-color: #091d4c;
     left: 0px;
     width: 100%;
     top: 0px;
@@ -27,7 +27,7 @@ ul#list-nav li a {
   font-weight: bold;
   font-size: 125%;
   font-family: "Book Antiqua";
-  background:#00154c;
+  background:#091d4c;
   color: #DDE6FF;
   text-align:center;
   padding: 20px;
@@ -49,28 +49,43 @@ div#content {
 }
 .flex-content {
     display: flex;
-    align-items: stretch;
+ 
     flex-direction: column;
 }
+
 div#footer {
     border-width:3px;
     border-style:groove;
     border-color:#00154c;
-    padding: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top:0;
+    padding-bottom:0;
+    font-size: 70%;
 }
 .flex-footer{
     order: 1;
+}
+
+.pFooter {
+    padding:0;
+}
+
+.imgFooter {
+    float: right;
+    margin: 0px 0px 15px 15px;
 }
 
 h1 { text-align:center; font-family: "Georgia"; font-weight:bold;}
 h2 { text-align:center; font-family: "Georgia"; font-weight:bold;}
 h3 { text-align:left; font-family: "Georgia"; font-weight:bold;}
 
-div#homepage {
+.mainColumn {
     border-width:3px;
     border-style:groove;
     border-color:#00154c;
     padding: 2%;
+    background: rgba(45, 65, 115, 0.2);
 }
 
 .flex-speeches {
@@ -80,15 +95,7 @@ div#homepage {
 }
 
 div#speechDisplay {
-    border-width:3px;
-    border-style:groove;
-    border-color:#00154c;
-    background: rgba(255, 255, 255, 0.5);
-    z-index:500;
-}
-
-.flex-speechDisplay {
-   flex-grow: 6;
+   flex-grow: 4;
    order:1;
 }
 

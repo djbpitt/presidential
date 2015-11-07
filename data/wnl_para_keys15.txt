@@ -1,0 +1,15 @@
+0	0.08144	union government party state insurgent people constitution spain island election action purpose desire part wa day question insurrection majority 
+1	0.13606	state united government ha wa treaty country american citizen great claim relation britain foreign question power vessel nation commercial 
+2	0.09021	year wa fiscal revenue june expenditure silver treasury total government increase amount number day receipt cent sum ha expense 
+3	0.03095	gun vessel construction ship ha wa completed year navy inch coast river line contract board defense made route state 
+4	0.05448	war force wa men german enemy fighting production effort germany year army troop armed air day japanese fight thousand 
+5	0.10638	life ha men america year god faith woman nation day man wa history spirit child earth time moment world 
+6	0.03679	indian land reservation civilization tribe acre voice effort territory school agent demand purchase area population protect protection severalty occupation 
+7	0.0567	state law court united case labor federal provision justice capital territory criminal slave supreme offense judge power chinese number 
+8	0.15514	government people public country interest citizen law nation free good power institution national land hand advantage principle success political 
+9	0.10597	job year american tax work business ve make america energy family economy school program people time million back education 
+10	0.05648	president house fellow representative senate oath mr state united congress called citizens blessing country vice countryman member high trust 
+11	0.26836	nation world people peace war ha great time make american future power security america national democracy problem policy government 
+12	0.2943	congress ha present service made law department time general condition public report duty government subject consideration attention measure secretary 
+13	0.05749	product enterprise thing market farmer price trade capital life export city labor farm industrial industry employment production country level 
+14	0.05281	war wa army enemy ha pension number officer service british soldier force general savage military nurse troop naval prisoner 

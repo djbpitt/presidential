@@ -3,9 +3,28 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <title>Methodology</title>
-        <link rel="stylesheet" type="text/css" href="css/home.css"/>
+        <link rel="stylesheet" type="text/css" href="css/home.css" />
     </head>
     <body>
         <!--#include virtual="inc/navbar.html" -->
+        <div id="content" class="flex-content">
+            <div id="topicModel" class="mainColumn">
+                <h3>Topic Modelling</h3>
+                <p> Before starting topic modelling, the text was prepared by lemmatizing the words.
+                    Orginally the Porter stemmer was used, however, it was deemed too aggressive in
+                    cutting off the word endings. It became hard to decipher the topic modelling
+                    results, because it could not be determined what the word fragment actually
+                    represented. Then the WordNet Lemmatizer (WNL) was used and the results were
+                    more intelligible. Another prepatory step was to turn each paragraph of the
+                    speech into its own .txt file. Once these steps were completed, topic modeling
+                    can begin. </p>
+                <p>
+                    <a href="http://mallet.cs.umass.edu/">MALLET</a> was the tool used for topic
+                    modelling. The tutorial on how to use MALLET was from <a
+                        href="http://programminghistorian.org/lessons/topic-modeling-and-mallet">The
+                        Programming Historian</a>. 
+                </p>
+            </div>
+        </div>
     </body>
 </html>
