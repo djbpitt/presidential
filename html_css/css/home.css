@@ -79,6 +79,7 @@ div#footer {
 h1 { text-align:center; font-family: "Georgia"; font-weight:bold;}
 h2 { text-align:center; font-family: "Georgia"; font-weight:bold;}
 h3 { text-align:left; font-family: "Georgia"; font-weight:bold;}
+h4 { text-align:center; font-family: "Georgia"; font-weight:bold;}
 
 .mainColumn {
     border-width:3px;
@@ -95,20 +96,18 @@ h3 { text-align:left; font-family: "Georgia"; font-weight:bold;}
 }
 
 div#speechDisplay {
-   flex-grow: 4;
-   order:1;
+    width: 70%;
 }
 
 div#speechIndex {
+    width: 30%;
     border-width:3px;
     border-style:groove;
     border-color:#00154c;
     padding:2%;
     z-index:500;
 }
-.flex-speechIndex {
-    flex-grow:1;
-    order:2;
+
+.equalCol {
+    table-layout: fixed;
 }
-
-

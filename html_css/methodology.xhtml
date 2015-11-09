@@ -22,8 +22,129 @@
                     <a href="http://mallet.cs.umass.edu/">MALLET</a> was the tool used for topic
                     modelling. The tutorial on how to use MALLET was from <a
                         href="http://programminghistorian.org/lessons/topic-modeling-and-mallet">The
-                        Programming Historian</a>. 
-                </p>
+                        Programming Historian</a>. Mallet was run from 5 to 25 topics (at increments
+                    of 1) to see which would produce more useful results. Although at 5 or 6 topics,
+                    it is still <a
+                        href="https://github.com/djbpitt/presidential/blob/master/data/wnl_para_keys5.txt"
+                        >possible to see</a> what some of the topics are, they seem too broad. Some
+                    of the topics that were groupded together would probably have been split into
+                    seperate topics if they were tagged manually. At <a
+                        href="https://github.com/djbpitt/presidential/blob/master/data/wnl_para_keys25.txt"
+                        >25 topics</a>, they became much more specific.</p>
+                <p> When looking at the topic keys, some of them seem somewhat similar. It was not
+                    clear why some of them might be seperate topics. For example, at <a
+                        href="https://github.com/djbpitt/presidential/blob/master/data/wnl_para_keys14.txt"
+                        >14 topics</a>, topics 7 and 8 can both be interpreted as "money" topics.
+                    Here are the key words:</p>
+                <table border="1">
+                    <tr>
+                        <th>Topic #</th>
+                        <th>Key Words</th>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>year wa <b>fiscal expenditure revenue</b> june <i>silver</i> number
+                                <b>treasury</b> total increase <b>pension</b> government
+                                <i>amount</i> receipt day <b>cent</b> sum <b>money</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td><i>job</i> american year <b>tax</b> business <i>work</i> ve family make
+                            time reform <i>million</i> home school <b>economy</b> tonight america
+                            back <b>deficit</b></td>
+                    </tr>
+                </table>
+                <p> Compare the following sections of text indicated to belong to topics 7 and 8: </p>
+                <table border="1" id="equalCol3">
+                    <tr>
+                        <th style="width:33.33%">Topic 7</th>
+                        <th style="width:33.33%">Topic 7</th>
+                        <th style="width:33.33%">Topic 8</th>
+                    </tr>
+                    <tr>
+                        <th>Washington Sotu (1796) P:31</th>
+                        <th>Lincoln SotU (1861) P:43</th>
+                        <th>Obama SotU (2013) P:10</th>
+                    </tr>
+                    <tr>
+                        <td>I have directed an estimate of the appropriations necessary for the
+                            service of the ensuing year to be submitted from the proper Department,
+                            with a view of the public receipts and expenditures to the latest period
+                            to which an account can be prepared.</td>
+                        <td>The revenue from all sources during the fiscal year ending June 30,
+                            1861, including the annual permanent appropriation of $700,000 for the
+                            transportation of "free mail matter," was $9,049,296.40, being about 2
+                            per cent less than the revenue for 1860. </td>
+                        <td> Over the last few years, both parties have worked together to reduce
+                            the deficit by more than $2.5 trillion, mostly through spending cuts,
+                            but also by raising tax rates on the wealthiest 1 percent of Americans.
+                            As a result, we are more than halfway towards the goal of $4 trillion in
+                            deficit reduction that economists say we need to stabilize our finances.
+                        </td>
+                    </tr>
+                </table>
+                <p>If these paragraphs were tagged manually, they would perhaps all have been
+                    attributed to the same topic such as "money" or "budget". But these 3 paragraphs
+                    were frequently seperated into two categories regardless of the number of total
+                    topics. By looking at some surrounding paragraphs, which were also assigned to
+                    the same categories, it becomes clearer why they might be categoried the way
+                    they were:</p>
+                <table border="1" id="equalCol2">
+                    <tr>
+                        <th style="width:50%">Topic 7</th>
+                        <th style="width:50%">Topic 8</th>
+                    </tr>
+                    <tr>
+                        <th>Lincoln SotU (1861) P:43, 44, 45, 46</th>
+                        <th>Obama SotU (2013) P:10, 12, 13</th>
+                    </tr>
+                    <tr>
+                        <td><p>The revenue from all sources during the fiscal year ending June 30,
+                                1861, including the annual permanent appropriation of $700,000 for
+                                the transportation of "free mail matter," was $9,049,296.40, being
+                                about 2 per cent less than the revenue for 1860.</p>
+                            <p>The expenditures were $13,606,759.11, showing a decrease of more than
+                                8 per cent as compared with those of the previous year and leaving
+                                an excess of expenditure over the revenue for the last fiscal year
+                                of $4,557,462.71.</p>
+                            <p>The gross revenue for the year ending June 30, 1863, is estimated at
+                                an increase of 4 per cent on that of 1861, making $8,683,000, to
+                                which should be added the earnings of the Department in carrying
+                                free matter, viz, $700,000, making $9,383,000.</p>
+                            <p>The total expenditures for 1863 are estimated at $12,528,000, leaving
+                                an estimated deficiency of $3,145,000 to be supplied from the
+                                Treasury in addition to the permanent appropriation.</p>
+                        </td>
+                        <td>
+                            <p>Over the last few years, both parties have worked together to reduce
+                                the deficit by more than $2.5 trillion, mostly through spending
+                                cuts, but also by raising tax rates on the wealthiest 1 percent of
+                                Americans. As a result, we are more than halfway towards the goal of
+                                $4 trillion in deficit reduction that economists say we need to
+                                stabilize our finances.</p>
+                            <p>In 2011, Congress passed a law saying that if both parties couldn't
+                                agree on a plan to reach our deficit goal, about a trillion dollars'
+                                worth of budget cuts would automatically go into effect this year.
+                                These sudden, harsh, arbitrary cuts would jeopardize our military
+                                readiness. They'd devastate priorities like education and energy and
+                                medical research. They would certainly slow our recovery and cost us
+                                hundreds of thousands of jobs. And that's why Democrats,
+                                Republicans, business leaders, and economists have already said that
+                                these cuts—known here in Washington as the sequester—are a really
+                                bad idea.</p>
+                            <p>Now, some in Congress have proposed preventing only the defense cuts
+                                by making even bigger cuts to things like education and job
+                                training, Medicare, and Social Security benefits. That idea is even
+                                worse.</p>
+                        </td>
+                    </tr>
+                </table>
+                <p>Topic 8 perhaps have components such as "politics" combined with the "money" or
+                    "budget" part. It might also be worth noting that the 7 and 8 seem to be from
+                    two time periods. Topic 7 appears before FDR and topic 8 appears after. By
+                    looking at the data from topic modeling and examining possible variables,
+                    comparisons can be made based on some of these variables.</p>
             </div>
         </div>
     </body>
