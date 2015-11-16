@@ -1,10 +1,16 @@
 body {
-    background-color: #DDE6FF;
+    background-color: #b3c3f3;
 }
+h1 { text-align:center; font-family: "Georgia"; font-weight:bold;}
+h2 { text-align:center; font-family: "Georgia"; font-weight:bold;}
+h3 { text-align:left; font-family: "Georgia"; font-weight:bold;}
+h4 { text-align:center; font-family: "Georgia"; font-weight:bold;}
+table { width: 100%;}
+td { padding-left:1%; padding-right:1%;}
 
 div#navbar {
     position: fixed;
-    background-color: #091d4c;
+    background-color: #203470;
     left: 0px;
     width: 100%;
     top: 0px;
@@ -16,10 +22,12 @@ div#navbar {
   list-style:none;
   margin:20px;
   padding:0px;
-  
-  display:flex;
+  display: flex;
+  -webkit-display: flex;
   flex-flow: row;
+  -webkit-flex-flow: row;
   justify-content:center;
+  -webkit-justify-content:center;
 }
 
 ul#list-nav li a {
@@ -27,18 +35,19 @@ ul#list-nav li a {
   font-weight: bold;
   font-size: 125%;
   font-family: "Book Antiqua";
-  background:#091d4c;
-  color: #DDE6FF;
+  background:#203470;
+  color: #b3c3f3;
   text-align:center;
   padding: 20px;
 }
 
 ul#list-nav li a:hover {
-  background:#DDE6FF;
-  color:#000
+  background:#b3c3f3;
+  color:#203470;
 }
 
 div#content {
+    color: #131f42;
     position: relative;
     width: 90%;
     margin-left: 5%;
@@ -49,11 +58,13 @@ div#content {
 }
 .flex-content {
     display: flex;
- 
+    -webkit-display: flex;
     flex-direction: column;
+    -webkit-flex-direction: column;
 }
 
 div#footer {
+    background: rgba(141, 165, 237, 0.8);
     border-width:3px;
     border-style:groove;
     border-color:#00154c;
@@ -61,11 +72,16 @@ div#footer {
     padding-right: 2%;
     padding-top:0;
     padding-bottom:0;
-    font-size: 70%;
+    font-size: 80%;
 }
 .flex-footer{
     order: 1;
+    -webkit-order: 1;
 }
+
+.flex-footer a:link { color: #1d44b8;}
+.flex-footer a:visited { color: #441db8;}
+.flex-footer a:hover { color: #b8911d; }
 
 .pFooter {
     padding:0;
@@ -76,38 +92,49 @@ div#footer {
     margin: 0px 0px 15px 15px;
 }
 
-h1 { text-align:center; font-family: "Georgia"; font-weight:bold;}
-h2 { text-align:center; font-family: "Georgia"; font-weight:bold;}
-h3 { text-align:left; font-family: "Georgia"; font-weight:bold;}
-h4 { text-align:center; font-family: "Georgia"; font-weight:bold;}
-
 .mainColumn {
+    color: #ecf0fc;
     border-width:3px;
     border-style:groove;
-    border-color:#00154c;
+    border-color:#203470;
     padding: 2%;
-    background: rgba(45, 65, 115, 0.2);
+    background: rgba(39, 63, 135, 0.7);
 }
+
+.mainColumn a:link { color: #b3c3f3;}
+.mainColumn a:visited { color: #c3b3f3;} 
+.mainColumn a:hover { color: #f3e3b3;}
 
 .flex-speeches {
     display: flex;
+    -webkit-display: flex;
     flex-wrap: nowrap;
-    align-items: stretch;  
+    align-items: stretch;
+    -webkit-align-items: stretch;
 }
 
 div#speechDisplay {
-    width: 70%;
+    width: 75%;
 }
 
 div#speechIndex {
-    width: 30%;
+    background: rgba(141, 165, 237, 0.7);
+    width: 25%;
     border-width:3px;
     border-style:groove;
     border-color:#00154c;
     padding:2%;
     z-index:500;
+    font-size: smaller;
 }
+#speechIndex > ul { padding-left: 20px;}
+
+#speechIndex span {color: #1d44b8; text-decoration: underline; cursor: pointer;}
+
+#topicModel > table > tr > td > b { font-size: larger; }
+#topicModel > table > tr > td > i { font-size: larger; }
 
 .equalCol {
     table-layout: fixed;
 }
+

@@ -13,9 +13,11 @@
                     <xsl:apply-templates select="//when"/>
                 </h2>
                 <hr />
-                <p><xsl:apply-templates select="//p"/><br/></p>
+                <xsl:apply-templates select="//body/p"/>
             </body>
         </html>
     </xsl:template>
-
+    <xsl:template match="p">
+        <p><xsl:apply-templates/></p>
+    </xsl:template>
 </xsl:stylesheet>

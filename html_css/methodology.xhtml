@@ -146,6 +146,26 @@
                     looking at the data from topic modeling and examining possible variables,
                     comparisons can be made based on some of these variables.</p>
             </div>
+            <div id="dynamicIndex" class="mainColumn">
+                <h3>Dynamic Index with PHP</h3>
+                <p> The speeches pages includes an Index panel. It includes links to every speech.
+                    This index could be created simply by manually writing the html. However, this
+                    is a time consuming task if the corpus includes hundreds of files. It is also an
+                    issue when new documents are added to the corpus. One way to resolve this is by
+                    dynamically generating the index with PHP. </p>
+                <p> The method used includes two parts. First, create an array that store the titles
+                    of each document. The second part is to output the values stored in the array
+                    and add html format to them. The .php file can be seen <a
+                        href="https://github.com/djbpitt/presidential/blob/master/html_css/speeches.php"
+                        >here</a>. The first part of the php was originally written by Dr. Birnbaum.
+                    This section created an array called "presidents". It stored the name of the
+                    presidents as the key. The value of each key is another array called "author".
+                    This array contained the values of title of each speech and the date. The second
+                    part of the php "read" the values of the array and displayed them in a nested
+                    list. It read each key of the "presidents" array, and displayed it as a small
+                    header. Then it read each "author" array, and displayed every valued contained
+                    within as a list. </p>
+            </div>
         </div>
     </body>
 </html>
