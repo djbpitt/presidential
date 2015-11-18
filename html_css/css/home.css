@@ -5,8 +5,9 @@ h1 { text-align:center; font-family: "Georgia"; font-weight:bold;}
 h2 { text-align:center; font-family: "Georgia"; font-weight:bold;}
 h3 { text-align:left; font-family: "Georgia"; font-weight:bold;}
 h4 { text-align:center; font-family: "Georgia"; font-weight:bold;}
-table { width: 100%;}
-td { padding-left:1%; padding-right:1%;}
+table { width: 100%; border: 1px solid #ecf0fc;}
+td { padding-left:1%; padding-right:1%; border: 1px solid #ecf0fc;}
+th { padding-left:1%; padding-right:1%; border: 1px solid #ecf0fc;}
 
 div#navbar {
     position: fixed;
@@ -55,6 +56,9 @@ div#content {
     top: 80px;
     font-family: "Book Antiqua";
     z-index: 0;
+}
+div#content.flex-speeches{
+    height: 100vh;
 }
 .flex-content {
     display: flex;
@@ -115,7 +119,9 @@ div#footer {
 
 div#speechDisplay {
     width: 75%;
+    overflow: auto;
 }
+div#speechDisplay > h3 { text-align:center; font-family: "Georgia"; font-weight:bold;}
 
 div#speechIndex {
     background: rgba(141, 165, 237, 0.7);
@@ -126,6 +132,7 @@ div#speechIndex {
     padding:2%;
     z-index:500;
     font-size: smaller;
+    overflow: auto;
 }
 #speechIndex > ul { padding-left: 20px;}
 

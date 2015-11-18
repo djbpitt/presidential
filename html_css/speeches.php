@@ -5,9 +5,10 @@ echo "<?xml version='1.0' encoding='UTF-8'?><!DOCTYPE html>";
     <head>
         <title>Speeches</title>
         <link rel="stylesheet" type="text/css" href="css/home.css" />
+        <script type="text/javascript" src="js/speeches.js">/**/</script>
     </head>
     <body>
-        <!--#include virtual="inc/navbar.html" -->
+        <?php virtual("inc/navbar.html"); ?>
         <div id="content" class="flex-speeches">
             <!-- flex container for all items in Speeches page -->
             <div id="speechDisplay" class="mainColumn">
@@ -50,7 +51,7 @@ echo "<?xml version='1.0' encoding='UTF-8'?><!DOCTYPE html>";
 	                               } 
 	                           else {
 		                          $presidents[$author] = array(); }
-	                       array_push($presidents[$author],$title . ' (' . substr($date, 0, 4) . ')');}
+	                       array_push($presidents[$author],'<span id="data/speeches/html/' . $filename . '">' . $title . ' (' . substr($date, 0, 4) . ')</span>');}
                 ?>
                 <!-- output the array values into nested lists-->
                 <?php 
@@ -58,7 +59,7 @@ echo "<?xml version='1.0' encoding='UTF-8'?><!DOCTYPE html>";
                     echo "<h4>$author</h4>";
                     echo "<ul>";
                         foreach ($speeches as $speech) {
-                            echo "<li><a href='speeches.php'>$speech</a></li>\n";
+                            echo "<li>$speech</li>\n";
                         }
                     echo "</ul>";
                 }
