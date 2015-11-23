@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Analysis</title>
+        <link rel="stylesheet" type="text/css" href="css/home.css" />
+    </head>
+    <body>
+        <!--#include virtual="inc/navbar.html" -->
+        <div id="content" class="flex-content">
+            <div id="diachronic" class="mainColumn">
+                <h3>Comparison Through Time</h3>
+                <p> When analysing the results of topic modelling, it was initially somewhat
+                    baffling why certain key words were grouped into different topics. It was only
+                    after taking "time" into account, that this became easier to understand. This
+                    concept was well demonstrated in the article, <a
+                        href="http://www.theatlantic.com/politics/archive/2015/01/the-language-of-the-state-of-the-union/384575/"
+                        target="new">The Language of the State of the Union</a> by Benjamin Schmidt
+                    and Mitch Fraas in The Atlantic. Although in their interactive chart, they were
+                    graphing words rather than topics, the concept is the same. For example, in
+                    their chart, by selecting the words "Treasury" or "Budget", it shows when they
+                    are most frequently used.</p>
+                <p><img src="img/treasury.png" alt="Treasury" /><img src="img/budget.png"
+                        alt="Budget" /></p>
+                <p style="clear:both;"><br /></p>
+                <p> A similar pattern could be seen when looking at topics. For example, at <a
+                        href="https://github.com/djbpitt/presidential/blob/master/data/wnl_para_keys14.txt"
+                        >14 topics</a>, topics 7 and 8 both concern "money" matters. Here are the
+                    key words:</p>
+                <table>
+                    <tr>
+                        <th>Topic #</th>
+                        <th>Key Words</th>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>year wa <b>fiscal expenditure revenue</b> june <i>silver</i> number
+                                <b>treasury</b> total increase <b>pension</b> government
+                                <i>amount</i> receipt day <b>cent</b> sum <b>money</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td><i>job</i> american year <b>tax</b> business <i>work</i> ve family make
+                            time reform <i>million</i> home school <b>economy</b> tonight america
+                            back <b>deficit</b></td>
+                    </tr>
+                </table>
+                <p>Topic 7, with key words like "treasury" and "expenditure" were consistently
+                    marked for speeches from earlier parts of the corpus. While topic 8, with key
+                    words like "economy" and "tax" were more consistently marked for speeches from
+                    latter parts of the corpus. </p>
+                
+            </div>
+        </div>
+    </body>
+</html>

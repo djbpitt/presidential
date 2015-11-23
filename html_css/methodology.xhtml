@@ -10,7 +10,7 @@
         <div id="content" class="flex-content">
             <div id="topicModel" class="mainColumn">
                 <h3>Topic Modelling</h3>
-                <p> Before starting topic modelling, the text was prepared by lemmatizing the words.
+                <p> Before starting topic modelling, the text was prepared by <a href="#lemmatize">lemmatizing the words</a>.
                     Orginally the Porter stemmer was used, however, it was deemed too aggressive in
                     cutting off the word endings. It became hard to decipher the topic modelling
                     results, because it could not be determined what the word fragment actually
@@ -165,6 +165,71 @@
                     list. It read each key of the "presidents" array, and displayed it as a small
                     header. Then it read each "author" array, and displayed every valued contained
                     within as a list. </p>
+            </div>
+            <div id="lemmatize" class="mainColumn">
+                <h3>Stem or Lemmatize Text</h3>
+                <p>
+                    In preparation for <a href="#topicModel">topic modelling</a>, The speech text were lemmatized. The goal is to reduce the different forms into a base form of the word. 
+                </p>
+                <p>Prerequisites: </p>
+                    <ol>
+                        <li>Have Python installed (Ex: <a href="https://www.continuum.io/downloads" target="new">Anaconda</a>)</li>
+                        <li>Have NLTK installed (Anaconda includes NLTK package or from <a href="http://www.nltk.org/install.html" target="new">NLTK</a> directly)</li>
+                        <li>Have your source text in a .txt format (I found this easier than trying to process from HTML)</li>
+                    </ol>
+                <p>Steps: </p>
+                    <ol>
+                        <li>Open a command window (Terminal for Mac), and import nltk
+                        <div class="code">
+                            import nltk<br />
+                            from nltk import word_tokenize
+                        </div>
+                        </li>
+                        <li>Read source text file.  Enter the file path where I have "/Users/dingyi....".  (<a href="http://www.pitt.edu/~naraehan/python2/file_path_cwd.html" target="new">Referencing a local file path in Python</a>)<br />
+                        <div class="code">
+                            f=open('/Users/dingyi/Desktop/LemmaTestDoc.txt')<br />
+                            raw=f.read()
+                        </div>
+                        </li>
+                        <li>Tokenize and lowercase all text
+                        <div class="code">
+                            tokens=word_tokenize(raw)<br />
+                            words=[w.lower() for w in tokens]
+                        </div>
+                        </li>
+                        <li>User a Stemmer or Lemmatizer from NLTK
+                        <ol type="i">
+                            <li>Porter<br />
+                                <div class="code">
+                                porter=nltk.PorterStemmer()<br />
+                                [porter.stem(w) for w in words]
+                            </div>
+                            </li>
+                            <li>Lancaster<br />
+                                <div class="code">
+                                lancaster=nltk.LancasterStemmer()<br />
+                                [lancaster.stem(w) for w in words]
+                            </div>
+                            </li>
+                            <li>Word Net<br />
+                                <div class="code">
+                                wnl=WordNetLemmatizer()<br />
+                                [wnl.lemmatize(w) for w in words]
+                            </div>
+                            </li>
+                        </ol>
+                        </li>
+                        <li>Output into a file  
+                        <div class="code">
+                            output=open('outputTest.txt', 'w')<br />
+                            print(stemmed, file=output)<br />
+                            stemmed=[porter.stem(w) for w in words]<br />
+                            for stem in stemmed:<br />
+                            print(stem, file=output)<br />
+                            output.close()
+                        </div>
+                        </li>
+                    </ol>
             </div>
         </div>
     </body>

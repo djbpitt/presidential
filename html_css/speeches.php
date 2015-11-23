@@ -13,24 +13,9 @@ echo "<?xml version='1.0' encoding='UTF-8'?><!DOCTYPE html>";
             <!-- flex container for all items in Speeches page -->
             <div id="speechDisplay" class="mainColumn">
                 <!-- flex item for where speeches are displayed -->
-                <p><b>links under index do not work yet</b></p>
-                <p>Lorem ipsum lacinia metus phasellus interdum curabitur semper neque ullamcorper,
-                    nam non tempor cras vestibulum quam lacinia euismod, senectus duis conubia
-                    mauris ut dictum cursus nam est hac pellentesque curabitur ac arcu porttitor,
-                    tincidunt porttitor ultricies integer vel duis, malesuada ultricies nisi dui
-                    est. Sem dapibus ad odio placerat sollicitudin nec nisi, platea mi mattis justo
-                    metus urna, bibendum facilisis sapien tellus habitasse cursus sit primis
-                    adipiscing vulputate rhoncus lorem.</p>
-                <p>Semper aliquam gravida convallis tempus nibh sapien consectetur consequat,
-                    maecenas inceptos sem id at mi dapibus leo sem lacinia et lobortis dictumst
-                    venenatis egestas consectetur duis porttitor mi, risus lorem suspendisse odio
-                    vestibulum dolor bibendum donec proin augue neque est, placerat tempus lacus
-                    pellentesque velit rhoncus ipsum pharetra suspendisse primis. Integer platea
-                    diam fames erat porttitor sem diam vitae volutpat aptent vulputate, blandit
-                    tellus orci sem sit etiam ac massa gravida praesent amet at, potenti bibendum
-                    mollis platea fringilla laoreet justo pellentesque dictumst posuere aliquam quam
-                    mauris semper inceptos nibh amet aptent metus porttitor, at est elementum odio
-                    sem pellentesque bibendum laoreet. </p>
+                <a href="http://www.ourdocuments.gov/doc.php?doc=36#" target="new">
+                <img src="http://www.ourdocuments.gov/document_data/document_images/doc_036_big.jpg" alt="Gettysburg Address" width="100%" height="100%"/>
+                </a>
             </div>
             <div id="speechIndex" class="flex-speechIndex">
                 <!-- flex item for Index -->
