@@ -7,6 +7,7 @@ Here are some of the questions that might be answered based on the comparisons:
 Did the topics in speeches change over time?
 Did different presidents focus on different topics?
 What topics were predominant in Inaugural speeches vs. State of the Union Speeches?
+
 Project Scope
 
 A corpus consisting of all U.S. presidential speeches would be extremely large and outside the scope of this project. Some selection critiria were made to narrow down the corpus. The first criterion was to only use Inaugural and State of the Union (SotU) speeches. The second was to limit the number of presidents. Selection criteria for the presidents are as follows:
