@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="350"
+     height="350"
+     viewBox="0 0 350 350"
+     preserveAspectRatio="xMinYMin meet">
+   <g transform="translate(200, 200), scale(1.5, 1.5)">
+      <circle r="100" cx="0" cy="0" fill="lightgray"/>
+      <path d="M0,0 L100,0 A100,100 0 1,1 0.954329466272114,0.954329466272114 Z"
+            style="fill:#ff9900; stroke:black; stroke-width:1"/>
+      <path d="M0,0 L100,0 A100,100 0 1,1 0.7358282654268806,0.7358282654268806 Z"
+            style="fill:#00ff99; stroke:black; stroke-width:1"/>
+      <path d="M0,0 L100,0 A100,100 0 1,1 0.5133674862919474,0.5133674862919474 Z"
+            style="fill:#9900ff; stroke:black; stroke-width:1"/>
+      <path d="M0,0 L100,0 A100,100 0 1,1 0.45862833021935717,0.45862833021935717 Z"
+            style="fill:#e6ff00; stroke:black; stroke-width:1"/>
+      <text text-anchor="start"
+            x="120"
+            y="-75"
+            fill="black"
+            font-size="60%">Madison</text>
+      <text text-anchor="start"
+            x="120"
+            y="-60"
+            fill="#e6ff00"
+            font-size="25%">War/Peace: 45.86%</text>
+      <text text-anchor="start"
+            x="120"
+            y="-50"
+            fill="#9900ff"
+            font-size="25%">Economy: 5.47%</text>
+      <text text-anchor="start"
+            x="120"
+            y="-40"
+            fill="#00ff99"
+            font-size="25%">Law: 22.25%</text>
+      <text text-anchor="start"
+            x="120"
+            y="-30"
+            fill="#ff9900"
+            font-size="25%">Sovereignty: 21.85%</text>
+   </g>
+</svg>

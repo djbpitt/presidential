@@ -6,7 +6,6 @@ echo "<?xml version='1.0' encoding='UTF-8'?><!DOCTYPE html>";
         <title>Speeches</title>
         <link rel="stylesheet" type="text/css" href="css/home.css" />
         <script type="text/javascript" src="js/speeches.js">/**/</script>
-        <script type="text/javascript" src="js/randomImg.js">/**/</script>
     </head>
     <body>
         <?php virtual("inc/navbar.html"); ?>
@@ -15,7 +14,7 @@ echo "<?xml version='1.0' encoding='UTF-8'?><!DOCTYPE html>";
             <div id="speechDisplay" class="mainColumn">
                 <!-- flex item for where speeches are displayed -->
                 <a href="http://www.ourdocuments.gov/content.php?page=milestone" target="new">
-                <script type="text/javascript">document.write(randomImg());</script>
+                <img src="img/image-<?php echo rand(1,6); ?>.jpg" alt="Milestone Documents" width="100%" height="100%"/>
                 </a>
             </div>
             <div id="speechIndex" class="flex-speechIndex">

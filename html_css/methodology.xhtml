@@ -9,18 +9,18 @@
         <!--#include virtual="inc/navbar.html" -->
         <div id="content" class="flex-content">
             <div id="topicModel" class="mainColumn">
-                <h3>Topic Modelling</h3>
-                <p> Before starting topic modelling, the text was prepared by <a href="#lemmatize">lemmatizing the words</a>.
-                    Orginally the Porter stemmer was used, however, it was deemed too aggressive in
-                    cutting off the word endings. It became hard to decipher the topic modelling
-                    results, because it could not be determined what the word fragment actually
-                    represented. Then the WordNet Lemmatizer (WNL) was used and the results were
-                    more intelligible. Another prepatory step was to turn each paragraph of the
-                    speech into its own .txt file. Once these steps were completed, topic modeling
-                    can begin. </p>
+                <h2>Topic Modeling</h2>
+                <p> Before starting topic modeling, the text was prepared by <a href="#lemmatize"
+                        >lemmatizing the words</a>. Orginally the Porter stemmer was used, however,
+                    it was deemed too aggressive in cutting off the word endings. It became hard to
+                    decipher the topic modeling results, because it could not be determined what the
+                    word fragment actually represented. Then the WordNet Lemmatizer (WNL) was used
+                    and the results were more intelligible. Another prepatory step was to turn each
+                    paragraph of the speech into its own .txt file. Once these steps were completed,
+                    topic modeling can begin. </p>
                 <p>
                     <a href="http://mallet.cs.umass.edu/">MALLET</a> was the tool used for topic
-                    modelling. The tutorial on how to use MALLET was from <a
+                    modeling. The tutorial on how to use MALLET was from <a
                         href="http://programminghistorian.org/lessons/topic-modeling-and-mallet">The
                         Programming Historian</a>. Mallet was run from 5 to 25 topics (at increments
                     of 1) to see which would produce more useful results. Although at 5 or 6 topics,
@@ -146,8 +146,135 @@
                     looking at the data from topic modeling and examining possible variables,
                     comparisons can be made based on some of these variables.</p>
             </div>
+            <div id="superTopic" class="mainColumn">
+                <h2>Grouping Topics Together</h2>
+                <p> After looking over the topic modeling results with various number of "topics"
+                    (from 5 to 25), it was decided to use the results for 14 topics. It was further
+                    decided to group these topics into 4 super-topics and 1 for other. The 4
+                    super-topics can be roughly labeled "War/Peace", "Economy", "Law",
+                    "Sovereignty". Below are the topic key words for each group: </p>
+                <h4>War/Peace</h4>
+                <table>
+                    <tr>
+                        <th>Topic #</th>
+                        <th>Key Words</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>vessel <b>gun</b> completed ship navy inch board <b>defense</b>
+                            construction work cruiser made <b>battle</b> contract building year plan
+                            torpedo mortar </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>ha country national nation <b>war military</b> great state service time
+                            present made public citizen progress le success result improvement</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>nation world people <b>peace</b> ha <b>war</b> america great life time
+                            make year american thing men future freedom <b>power</b> purpose</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td><b>war</b> wa <b>force</b> enemy army men troop soldier year german
+                            naval officer british navy day number ha attack nurse</td>
+                    </tr>
+                </table>
+                <h4>Economy</h4>
+                <table>
+                    <tr>
+                        <th>Topic #</th>
+                        <th>Key Words</th>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>year wa <b>fiscal expenditure revenue</b> june silver number
+                                <b>treasury</b> total increase <b>pension</b> government amount
+                            receipt day cent sum <b>money</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td><b>job</b> american year <b>tax</b> business work ve family make time
+                            reform million home school <b>economy</b> tonight america back
+                                <b>deficit</b></td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>energy <b>market industry</b> american america product country job clean
+                            farmer price natural <b>production</b> city good program science health
+                                <b>enterprise</b></td>
+                    </tr>
+                </table>
+                <h4>Law</h4>
+                <table>
+                    <tr>
+                        <th>Topic #</th>
+                        <th>Key Words</th>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>people government public interest duty citizen <b>justice</b> free
+                            principle good party <b>law</b> individual american trust country
+                            advantage political <b>constitution</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>congress government <b>law</b> ha department present report service
+                            condition general consideration subject attention time secretary made
+                                <b>legislation</b> provision act </td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td><b>law</b> state court united case labor <b>constitution</b> supreme
+                            slave criminal capital class offense <b>judge</b> question chinese
+                            circuit violation number </td>
+                    </tr>
+                </table>
+                <h4>Sovereignty</h4>
+                <table>
+                    <tr>
+                        <th>Topic #</th>
+                        <th>Key Words</th>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>indian <b>land</b> reservation tribe civilization acre school peace
+                            portion made <b>territory</b> civilized savage effort treatment great
+                            turkish turkey area </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>state united <b>government</b> ha <b>treaty</b> wa country american
+                            citizen power foreign britain authority claim commerce relation question
+                            vessel made</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>state wa <b>union</b> insurgent <b>territory</b> island line spain part
+                            insurrection pacific large election resource cuba capital kentucky
+                            railway route</td>
+                    </tr>
+                </table>
+                <p>The remaining topic appears to mostly come from the greetings and salutation
+                    sections of the speeches, so they were not included in the remaining
+                    calculations.</p>
+                <table>
+                    <tr>
+                        <th>Topic #</th>
+                        <th>Key Words</th>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>god fellow president house mr representative voice country man men oath
+                            earth senate day destiny citizens woman member heart </td>
+                    </tr>
+                </table>
+            </div>
             <div id="dynamicIndex" class="mainColumn">
-                <h3>Dynamic Index with PHP</h3>
+                <h2>Dynamic Index with PHP</h2>
                 <p> The speeches pages includes an Index panel. It includes links to every speech.
                     This index could be created simply by manually writing the html. However, this
                     is a time consuming task if the corpus includes hundreds of files. It is also an
@@ -167,69 +294,163 @@
                     within as a list. </p>
             </div>
             <div id="lemmatize" class="mainColumn">
-                <h3>Stem or Lemmatize Text</h3>
-                <p>
-                    In preparation for <a href="#topicModel">topic modelling</a>, The speech text were lemmatized. The goal is to reduce the different forms into a base form of the word. 
-                </p>
+                <h2>Stem or Lemmatize Text</h2>
+                <p> In preparation for <a href="#topicModel">topic modeling</a>, The speech text
+                    were lemmatized. The goal is to reduce the different forms into a base form of
+                    the word. </p>
                 <p>Prerequisites: </p>
-                    <ol>
-                        <li>Have Python installed (Ex: <a href="https://www.continuum.io/downloads" target="new">Anaconda</a>)</li>
-                        <li>Have NLTK installed (Anaconda includes NLTK package or from <a href="http://www.nltk.org/install.html" target="new">NLTK</a> directly)</li>
-                        <li>Have your source text in a .txt format (I found this easier than trying to process from HTML)</li>
-                    </ol>
+                <ol>
+                    <li>Have Python installed (Ex: <a href="https://www.continuum.io/downloads"
+                            target="new">Anaconda</a>)</li>
+                    <li>Have NLTK installed (Anaconda includes NLTK package or from <a
+                            href="http://www.nltk.org/install.html" target="new">NLTK</a>
+                        directly)</li>
+                    <li>Have your source text in a .txt format (I found this easier than trying to
+                        process from HTML)</li>
+                </ol>
                 <p>Steps: </p>
-                    <ol>
-                        <li>Open a command window (Terminal for Mac), and import nltk
-                        <div class="code">
-                            import nltk<br />
-                            from nltk import word_tokenize
-                        </div>
-                        </li>
-                        <li>Read source text file.  Enter the file path where I have "/Users/dingyi....".  (<a href="http://www.pitt.edu/~naraehan/python2/file_path_cwd.html" target="new">Referencing a local file path in Python</a>)<br />
-                        <div class="code">
-                            f=open('/Users/dingyi/Desktop/LemmaTestDoc.txt')<br />
-                            raw=f.read()
-                        </div>
-                        </li>
-                        <li>Tokenize and lowercase all text
-                        <div class="code">
-                            tokens=word_tokenize(raw)<br />
-                            words=[w.lower() for w in tokens]
-                        </div>
-                        </li>
-                        <li>User a Stemmer or Lemmatizer from NLTK
-                        <ol type="i">
-                            <li>Porter<br />
-                                <div class="code">
-                                porter=nltk.PorterStemmer()<br />
-                                [porter.stem(w) for w in words]
-                            </div>
-                            </li>
-                            <li>Lancaster<br />
-                                <div class="code">
-                                lancaster=nltk.LancasterStemmer()<br />
-                                [lancaster.stem(w) for w in words]
-                            </div>
-                            </li>
-                            <li>Word Net<br />
-                                <div class="code">
-                                wnl=WordNetLemmatizer()<br />
-                                [wnl.lemmatize(w) for w in words]
-                            </div>
-                            </li>
-                        </ol>
-                        </li>
-                        <li>Output into a file  
-                        <div class="code">
-                            output=open('outputTest.txt', 'w')<br />
-                            print(stemmed, file=output)<br />
-                            stemmed=[porter.stem(w) for w in words]<br />
-                            for stem in stemmed:<br />
-                            print(stem, file=output)<br />
-                            output.close()
-                        </div>
-                        </li>
-                    </ol>
+                <table>
+                    <tr>
+                        <th style="width:40%">1. Open a command window (Terminal for Mac), and
+                            import nltk</th>
+                        <td style="width:60%"> import nltk<br /> from nltk import word_tokenize
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>2. Read source text file. Enter the file path where I have
+                            "/Users/dingyi....". (<a
+                                href="http://www.pitt.edu/~naraehan/python2/file_path_cwd.html"
+                                target="new">Referencing a local file path in Python</a>)</th>
+                        <td> f=open('/Users/dingyi/Desktop/LemmaTestDoc.txt')<br /> raw=f.read()
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>3. Tokenize and lowercase all text</th>
+                        <td> tokens=word_tokenize(raw)<br /> words=[w.lower() for w in tokens] </td>
+                    </tr>
+                    <tr>
+                        <th>4. User a Stemmer or Lemmatizer from NLTK</th>
+                    </tr>
+                    <tr>
+                        <th style="text-align:right">i. Porter</th>
+                        <td> porter=nltk.PorterStemmer()<br /> [porter.stem(w) for w in words] </td>
+                    </tr>
+                    <tr>
+                        <th style="text-align:right">ii. Lancaster</th>
+                        <td> lancaster=nltk.LancasterStemmer()<br /> [lancaster.stem(w) for w in
+                            words] </td>
+                    </tr>
+                    <tr>
+                        <th style="text-align:right">iii. Word Net</th>
+                        <td> wnl=WordNetLemmatizer()<br /> [wnl.lemmatize(w) for w in words] </td>
+                    </tr>
+                    <tr>
+                        <th>5. Output into a file </th>
+                        <td> output=open('outputTest.txt', 'w')<br /> print(stemmed,
+                            file=output)<br /> stemmed=[porter.stem(w) for w in words]<br /> for
+                            stem in stemmed:<br /> print(stem, file=output)<br /> output.close()
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="pieCharts" class="mainColumn">
+                <h2>Creating Pie Charts</h2>
+                <p>The <a href="/analysis.xhtml#pieCompare" target="new">pie charts</a> in the
+                    Analysis section were created using SVG. The easist way found was to create a
+                    circle as the base, and then create smaller and smaller slices of the pie on
+                    top. What remains visible would represent each category needed. In this way, the
+                    'path' element can be more of less copied for each category needed. The only
+                    part that needs to change is the final coordinates on the arc.</p>
+                <p> Some basic settings used:</p>
+                <ul>
+                    <li>Centered at (0,0)</li>
+                    <li>Radius of 100</li>
+                    <li>Starting at the 3-o'clock position and sweep the arc clockwise</li>
+                </ul>
+                <p>Steps: </p>
+                <table>
+                    <tr>
+                        <th style="width:40%">1. Create a circle centered on (0,0)</th>
+                        <td style="width:60%"> &lt;circle r="100" cx="0" cy="0"
+                            color="lightgray"/&gt;</td>
+                    </tr>
+                    <tr>
+                        <th>2. Create path elements</th>
+                    </tr>
+                    <tr>
+                        <th style="text-align:right">i. Use (0,0) as starting point - "M0,0"</th>
+                        <td> &lt;path d="<span style="color:red">M0,0</span> L100,0 A100,100 0 1,1
+                            30.90,-95.11 Z" style="color:#ff9900; stroke:black;
+                            stroke-width:1"/&gt;</td>
+                    </tr>
+                    <tr>
+                        <th style="text-align:right">ii. Take line to the 3-o'clock position -
+                            "L100,0"</th>
+                        <td> &lt;path d="M0,0 <span style="color:red">L100,0</span> A100,100 0 1,1
+                            30.90,-95.11 Z" style="color:#ff9900; stroke:black;
+                            stroke-width:1"/&gt;</td>
+                    </tr>
+                    <tr>
+                        <th style="text-align:right">iii. Use "A100,100" for the radii</th>
+                        <td> &lt;path d="M0,0 L100,0 <span style="color:red">A100,100</span> 0 1,1
+                            30.90,-95.11 Z" style="color:#ff9900; stroke:black;
+                            stroke-width:1"/&gt;</td>
+                    </tr>
+                    <tr>
+                        <th style="text-align:right">iv. Keep the next part "0"</th>
+                        <td> &lt;path d="M0,0 L100,0 A100,100 <span style="color:red">0</span> 1,1
+                            30.90,-95.11 Z" style="color:#ff9900; stroke:black;
+                            stroke-width:1"/&gt;</td>
+                    </tr>
+                    <tr>
+                        <th style="text-align:right">v. Determine how the arc should sweep. Use
+                            "1,1" for arcs over 50%, use "0,1" if arc less than 50%</th>
+                        <td> &lt;path d="M0,0 L100,0 A100,100 0 <span style="color:red">1,1</span>
+                            30.90,-95.11 Z" style="color:#ff9900; stroke:black;
+                            stroke-width:1"/&gt;</td>
+                    </tr>
+                    <tr>
+                        <th style="text-align:right">vi. Coordinates for the end of the arc **</th>
+                        <td> &lt;path d="M0,0 L100,0 A100,100 0 1,1 <span style="color:red"
+                                >30.90,-95.11</span> Z" style="color:#ff9900; stroke:black;
+                            stroke-width:1"/&gt;</td>
+                    </tr>
+                    <tr>
+                        <th style="text-align:right">vii. Use "z" to stop the path</th>
+                        <td> &lt;path d="M0,0 L100,0 A100,100 0 1,1 30.90,-95.11 <span
+                                style="color:red">Z</span>" style="color:#ff9900; stroke:black;
+                            stroke-width:1"/&gt;</td>
+                    </tr>
+                    <tr>
+                        <th style="text-align:right">viii. Styple the path element as needed</th>
+                        <td> &lt;path d="M0,0 L100,0 A100,100 0 1,1 30.90,-95.11 Z" <span
+                                style="color:red">style="color:#ff9900; stroke:black;
+                                stroke-width:1"</span>/&gt;</td>
+                    </tr>
+                    <tr>
+                        <th>3. Move the pie chart to the viewable area and scale up to the desired
+                            sized "pie"</th>
+                        <td> &lt;g transform="translate(175, 175), scale(1.5, 1.5)"&gt; </td>
+                    </tr>
+                </table>
+                <p> ** The coordinates for the end of the arc is the only part of the &lt;path&gt;
+                    element that needs to change. To calculate the coordinates, it might be
+                    beneficial to read "The Maths" section of the <a
+                        href="http://www.codestore.net/store.nsf/unid/EPSD-5DTT4L" target="new">Pie
+                        Are Square - Charting with SVG</a> article. The basic steps are as
+                    follows:</p>
+                <ol>
+                    <li>Determine the percentage of pie. Note that in this method, progressively
+                        smaller pieces are laid on top of each other. So percentage is the sum of
+                        all categories minus 1 category, then minus 2, etc. For example, if creating
+                        a pie chart with 5 categories of 20% each, there should be 1 &lt;circle&gt;
+                        and 4 &lt;path&gt; elements. The first path takes 80% of pie, next takes 60%
+                        etc. </li>
+                    <li>Determine angle using radian. Percentage from step 1 times 2 pi. For
+                        example, at 80%, it is (0.80 * 2 * pi).</li>
+                    <li>Determine x-coordinate using cos(angle in radian). Using same example of 80%, it is cos(5.0265).  Then multiply by radius.  This is why using radius = 100 is simple.  </li>
+                    <li>Determine y-coordinate using sin(angle in radian). Using same example of 80%, it is sin(5.0265).  Again, multiply by radius. </li>
+                </ol>
             </div>
         </div>
     </body>

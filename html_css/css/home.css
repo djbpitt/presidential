@@ -1,5 +1,8 @@
 body {
     background-color: #b3c3f3;
+    margin-top: 0px;
+    display: flex;
+    overflow: auto;
 }
 h1 { text-align:center; font-family: "Georgia"; font-weight:bold;}
 h2 { text-align:center; font-family: "Georgia"; font-weight:bold;}
@@ -8,7 +11,7 @@ h4 { text-align:center; font-family: "Georgia"; font-weight:bold;}
 table { width: 100%; border: 1px solid #ecf0fc;}
 td { padding-left:1%; padding-right:1%; border: 1px solid #ecf0fc;}
 th { padding-left:1%; padding-right:1%; border: 1px solid #ecf0fc;}
-div.code { padding-left: 1%; width:60%; background: rgba(236, 240, 252, 0.8); color: #273F87;}
+div.code { padding-left: 1%; width:60%; background: rgba(236, 240, 252, 0.2); color: #273F87;}
 
 div#navbar {
     position: fixed;
@@ -54,12 +57,16 @@ div#content {
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
-    top: 80px;
+    top: 75px;
     font-family: "Book Antiqua";
     z-index: 0;
 }
 div#content.flex-speeches{
-    height: 100vh;
+    display: flex;
+    -webkit-display: flex;
+    flex-flow: row;
+    position: fixed;
+    bottom: 2%;
 }
 .flex-content {
     display: flex;
@@ -148,3 +155,14 @@ div#speechIndex {
 }
 
 div#diachronic > p > img {float: left; margin-left: 1%; margin-right: 3%; max-width: 45%; height: auto; border: 1px solid #ecf0fc;}
+div#superTopic > h4 {text-align: left;}
+#superTopic > table > tr > td > b { font-size: larger; }
+#lemmatize > table > tr > th {text-align:left;}
+#lemmatize > table > tr > td {font-size: larger;}
+#pieCharts > table > tr > th {text-align:left;}
+#pieCharts > table > tr > td {font-size: larger;}
+
+#barCompare > svg {width:100%;}
+#pieCompare > svg {width: 24%; height: 24%;}
+ 
+

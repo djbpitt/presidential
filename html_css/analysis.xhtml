@@ -8,18 +8,88 @@
     <body>
         <!--#include virtual="inc/navbar.html" -->
         <div id="content" class="flex-content">
+            <div id="barCompare" class="mainColumn">
+                <h2>Comparison Between Different Types of Speech</h2>
+                <p> The corpus contains two types of speeches. In the chart below, the "<span
+                        style="background-color:#9900ff">Inaugurals</span>" are represented by red
+                    bars and the "<span style="background-color:#ff9900">State of the Union
+                        (SoTU)</span>" are represented by blue bars. </p>
+                <!--#include virtual="inc/bar_svg.svg" -->
+                <p>The topic percentages are weighted in two ways. First, topic modeling output
+                    provides a percentage of which topic the unit of text belongs to. Second, each
+                    unit of text is weighted by the total word count in the unit. The following
+                    steps were used, for each speech type, to generate the chart above:</p>
+                <ul>
+                    <li>At the unit of text level (each paragraph): <ol>
+                            <li>Sum of all percentage per "<a href="/methodology.xhtml#superTopic"
+                                    target="new">super-topic</a>"</li>
+                            <li>Word count of the paragraph multiplied to the sum </li>
+                        </ol>
+                    </li>
+                    <li>At the corpus level: <ol>
+                            <li>Sum of all the weighted word count from each paragraph</li>
+                            <li>Use the sum and divide by total word count throughout corpus</li>
+                        </ol>
+                    </li>
+                </ul>
+                <p> With the constant caveat that this is based on a limited corpus, it is not
+                    possible to say that different topics were represented in the two types of
+                    speeches. However, the results above do show some difference for the speeches in
+                    this corpus. The difference is most striking for the "Economy" topic at
+                    approximately 12.55% and least obvious for the "Law" topic at only 1.36%.</p>
+            </div>
+            <div id="pieCompare" class="mainColumn">
+                <h2>Comparison Between Presidents</h2>
+                <p> The corpus contains the speeches of 8 presidents. In the charts below, each <a
+                        href="/methodology.xhtml#superTopic" target="new">super-topic</a> is
+                    represented by a different color as follows: "<span
+                        style="background-color:#e6ff00">War/Peace</span>"; "<span
+                        style="background-color:#9900ff">Economy</span>"; "<span
+                        style="background-color:#00ff99">Law</span>"; "<span
+                        style="background-color:#ff9900">Sovereignty</span>".</p>
+                <!--#include virtual="inc/pie_gw.svg" -->
+                <!--#include virtual="inc/pie_jm.svg" -->
+                <!--#include virtual="inc/pie_al.svg" -->
+                <!--#include virtual="inc/pie_gc.svg" -->
+                <!--#include virtual="inc/pie_ww.svg" -->
+                <!--#include virtual="inc/pie_fdr.svg" -->
+                <!--#include virtual="inc/pie_rn.svg" -->
+                <!--#include virtual="inc/pie_bo.svg" -->
+                <p> The topic percentages were determined in a very similar method to the type of
+                    speech comparison seen above. As can be see from the pie charts above, there are
+                    fairly large differences in which topics were prominent for which president. </p>
+                <p> It's perhaps not surprising that 60.5% of FDR's speeches were considered
+                    "War/Peace" topic, with a large portion of his time in office during WWII.
+                    Similarly, it is not too surprising to see 52.02% of Obama's speeches focused on
+                    "Economy" as he took office during the economic crisis of '08. One of the issues
+                    revealed after generating these pie charts is regarding the unused topic
+                    (represented in <span style="background-color:lightgray">grey</span>). During
+                    the process of grouping topics into super-topics, topic 2 was disregarded
+                    because it seems to mostly be greetings and salutations. This might be a fair
+                    assumption for Cleveland's corpus when it only represent 1.45% of his speeches.
+                    However, for Nixon's corpus, it represent a very substantial 12.25%.</p>
+                <p> One possible way to ameliorate this problem is to use the 25-topic results
+                    before grouping them into super-topics. This way the "greetings and salutations"
+                    topic would possibly be seperated out more from the rest of the topics and
+                    represent its percentages in the corpus better.</p>
+                <p> The "Sovereignty" (in orange) super-topic also shows some change over time based
+                    on the pie charts. The earlier presidents have approximately 20% of their
+                    speeches in this category, while the latter half have less than 10%, with Nixon
+                    and Obama having less than 5% in this topic. The "Economy" (in purple)
+                    super-topic shows, somewhat, of the opposite trend.</p>
+            </div>
             <div id="diachronic" class="mainColumn">
-                <h3>Comparison Through Time</h3>
-                <p> When analysing the results of topic modelling, it was initially somewhat
-                    baffling why certain key words were grouped into different topics. It was only
-                    after taking "time" into account, that this became easier to understand. This
-                    concept was well demonstrated in the article, <a
+                <h2>Comparison Through Time</h2>
+                <p> When analysing the results of topic modeling, it was initially somewhat baffling
+                    why certain key words were grouped into different topics. It was only after
+                    taking "time" into account, that this became easier to understand. This concept
+                    was well demonstrated in the article, <a
                         href="http://www.theatlantic.com/politics/archive/2015/01/the-language-of-the-state-of-the-union/384575/"
-                        target="new">The Language of the State of the Union</a> by Benjamin Schmidt
-                    and Mitch Fraas in The Atlantic. Although in their interactive chart, they were
-                    graphing words rather than topics, the concept is the same. For example, in
-                    their chart, by selecting the words "Treasury" or "Budget", it shows when they
-                    are most frequently used.</p>
+                        target="new"><b>The Language of the State of the Union</b></a> by Benjamin
+                    Schmidt and Mitch Fraas in The Atlantic. Although in their interactive chart,
+                    they were graphing words rather than topics, the concept is the same. In two
+                    examples of their chart below, by selecting the words "Treasury" or "Budget", it
+                    shows when they are most frequently used.</p>
                 <p><img src="img/treasury.png" alt="Treasury" /><img src="img/budget.png"
                         alt="Budget" /></p>
                 <p style="clear:both;"><br /></p>
@@ -50,7 +120,6 @@
                     marked for speeches from earlier parts of the corpus. While topic 8, with key
                     words like "economy" and "tax" were more consistently marked for speeches from
                     latter parts of the corpus. </p>
-                
             </div>
         </div>
     </body>

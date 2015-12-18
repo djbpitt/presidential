@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="500"
+     height="350"
+     viewBox="0 0 500 350"
+     preserveAspectRatio="xMinYMin meet">
+   <g transform="translate(175, 175), scale(1.5, 1.5)">
+      <circle r="100" cx="0" cy="0" fill="lightgray"/>
+      <path d="M0,0 L100,0 A100,100 0 1,1 0.9758738305320096,0.9758738305320096 Z"
+            style="fill:#ff9900; stroke:black; stroke-width:1"/>
+      <path d="M0,0 L100,0 A100,100 0 1,1 0.7667788165527543,0.7667788165527543 Z"
+            style="fill:#00ff99; stroke:black; stroke-width:1"/>
+      <path d="M0,0 L100,0 A100,100 0 1,1 0.35964783338648154,0.35964783338648154 Z"
+            style="fill:#9900ff; stroke:black; stroke-width:1"/>
+      <path d="M0,0 L100,0 A100,100 0 1,1 0.26618644221380156,0.26618644221380156 Z"
+            style="fill:#e6ff00; stroke:black; stroke-width:1"/>
+      <text text-anchor="start"
+            x="120"
+            y="-75"
+            fill="black"
+            font-size="60%">Lincoln</text>
+      <text text-anchor="start"
+            x="120"
+            y="-60"
+            fill="#e6ff00"
+            font-size="50%">War/Peace: 26.62%</text>
+      <text text-anchor="start"
+            x="120"
+            y="-50"
+            fill="#9900ff"
+            font-size="50%">Economy: 9.35%</text>
+      <text text-anchor="start"
+            x="120"
+            y="-40"
+            fill="#00ff99"
+            font-size="50%">Law: 40.71%</text>
+      <text text-anchor="start"
+            x="120"
+            y="-30"
+            fill="#ff9900"
+            font-size="50%">Sovereignty: 20.91%</text>
+   </g>
+</svg>
