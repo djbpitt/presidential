@@ -33,28 +33,28 @@
                 </xsl:for-each>
                 <!-- Inaug bars -->
                 <rect x="{20+15}" y="-{$yInaugWP * 100 +10}" height="{$yInaugWP * 100}" width="15"
-                    fill="#9900ff" stroke-width="0.2" stroke="black"/>
+                    fill="#6600cc" stroke-width="0.2" stroke="black"/>
                 <text text-anchor="start" x="{20+17}" y="-{$yInaugWP * 100 +12}" fill="black"
                     font-size="25%">
                     <xsl:value-of select="format-number(($yInaugWP * 100), '##.##', 'twoDec')"/>
                     <xsl:text>%</xsl:text>
                 </text>
                 <rect x="{20+60}" y="-{$yInaugEcon * 100 +10}" height="{$yInaugEcon * 100}"
-                    width="15" fill="#9900ff" stroke-width="0.2" stroke="black"/>
+                    width="15" fill="#6600cc" stroke-width="0.2" stroke="black"/>
                 <text text-anchor="start" x="{20+62}" y="-{$yInaugEcon * 100 +12}" fill="black"
                     font-size="25%">
                     <xsl:value-of select="format-number(($yInaugEcon * 100), '##.##', 'twoDec')"/>
                     <xsl:text>%</xsl:text>
                 </text>
                 <rect x="{20+105}" y="-{$yInaugLaw * 100 + 10}" height="{$yInaugLaw * 100}"
-                    width="15" fill="#9900ff" stroke-width="0.2" stroke="black"/>
+                    width="15" fill="#6600cc" stroke-width="0.2" stroke="black"/>
                 <text text-anchor="start" x="{20+107}" y="-{$yInaugLaw * 100 +12}" fill="black"
                     font-size="25%">
                     <xsl:value-of select="format-number(($yInaugLaw * 100), '##.##', 'twoDec')"/>
                     <xsl:text>%</xsl:text>
                 </text>
                 <rect x="{20+150}" y="-{$yInaugSov * 100 + 10}" height="{$yInaugSov * 100}"
-                    width="15" fill="#9900ff" stroke-width="0.2" stroke="black"/>
+                    width="15" fill="#6600cc" stroke-width="0.2" stroke="black"/>
                 <text text-anchor="start" x="{20+152}" y="-{$yInaugSov * 100 +12}" fill="black"
                     font-size="25%">
                     <xsl:value-of select="format-number(($yInaugSov * 100), '##.##', 'twoDec')"/>
@@ -62,28 +62,28 @@
                 </text>
                 <!-- Sotu bars -->
                 <rect x="{35+15+0.4}" y="-{$ySotuWP * 100 +10}" height="{$ySotuWP * 100}" width="15"
-                    fill="#ff9900" stroke-width="0.2" stroke="black"/>
+                    fill="#cc6600" stroke-width="0.2" stroke="black"/>
                 <text text-anchor="start" x="{35+17.4}" y="-{$ySotuWP * 100 +12}" fill="black"
                     font-size="25%">
                     <xsl:value-of select="format-number(($ySotuWP * 100), '##.##', 'twoDec')"/>
                     <xsl:text>%</xsl:text>
                 </text>
                 <rect x="{35+60+0.4}" y="-{$ySotuEcon * 100 +10}" height="{$ySotuEcon * 100}" width="15"
-                    fill="#ff9900" stroke-width="0.2" stroke="black"/>
+                    fill="#cc6600" stroke-width="0.2" stroke="black"/>
                 <text text-anchor="start" x="{35+62.4}" y="-{$ySotuEcon * 100 +12}" fill="black"
                     font-size="25%">
                     <xsl:value-of select="format-number(($ySotuEcon * 100), '##.##', 'twoDec')"/>
                     <xsl:text>%</xsl:text>
                 </text>
                 <rect x="{35+105+0.4}" y="-{$ySotuLaw * 100 +10}" height="{$ySotuLaw * 100}" width="15"
-                    fill="#ff9900" stroke-width="0.2" stroke="black"/>
+                    fill="#cc6600" stroke-width="0.2" stroke="black"/>
                 <text text-anchor="start" x="{35+107.4}" y="-{$ySotuLaw * 100 +12}" fill="black"
                     font-size="25%">
                     <xsl:value-of select="format-number(($ySotuLaw * 100), '##.##', 'twoDec')"/>
                     <xsl:text>%</xsl:text>
                 </text>
                 <rect x="{35+150+0.4}" y="-{$ySotuSov * 100 +10}" height="{$ySotuSov * 100}" width="15"
-                    fill="#ff9900" stroke-width="0.2" stroke="black"/>
+                    fill="#cc6600" stroke-width="0.2" stroke="black"/>
                 <text text-anchor="start" x="{35+152.4}" y="-{$ySotuSov * 100 +12}" fill="black"
                     font-size="25%">
                     <xsl:value-of select="format-number(($ySotuSov * 100), '##.##', 'twoDec')"/>
